@@ -260,7 +260,6 @@ function renderAcademicProfile(profile) {
       <li>ORCID：<a href="${profile.links.orcid}" target="_blank" rel="noopener">${profile.orcid}</a></li>
       <li>Scopus Author ID：${profile.scopusAuthorId}</li>
       <li>ResearcherID：${profile.researcherId}</li>
-      <li><a href="cv.pdf" target="_blank" rel="noopener">简历（PDF）</a></li>
     `;
   }
 
@@ -279,7 +278,7 @@ function renderAcademicProfile(profile) {
       <li>Google Scholar：<a href="${profile.links.scholar}" target="_blank" rel="noopener">Xinghua Sui</a></li>
       <li>ResearchGate：<a href="${profile.links.researchgate}" target="_blank" rel="noopener">Xinghua Sui</a></li>
       <li>ORCID：<a href="${profile.links.orcid}" target="_blank" rel="noopener">${profile.orcid}</a></li>
-      <li>本站数据来源：Publications.enw、cv.pdf、GitHub 公开仓库信息；ResearchGate/Scholar/ORCID 作为外部学术档案入口。</li>
+      <li>本站数据来源：Publications.enw、GitHub 公开仓库信息；ResearchGate/Scholar/ORCID 作为外部学术档案入口。</li>
     `;
   }
 

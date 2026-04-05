@@ -14,14 +14,13 @@
 数据来源：
 
 - `Publications.enw`
-- `cv.pdf`
 - GitHub 公开仓库信息
 - ResearchGate 个人页面入口（用于主页链接补充）
 
 ## 部署方式
 
 1. 新建仓库（推荐：`luvega.github.io`）。
-2. 上传网页文件与资源文件（含 `avatar.jpg`、`cv.pdf`）。
+2. 上传网页文件与资源文件（含 `avatar.jpg`）。
 3. 仓库 `Settings -> Pages`：
    - Source：`Deploy from a branch`
    - Branch：`main` / root
