@@ -1,0 +1,33 @@
+{
+  "name": "Xinghua Sui",
+  "affiliation": "Sun Yat-sen University",
+  "orcid": "0000-0001-6076-4318",
+  "scopusAuthorId": "36164687900",
+  "researcherId": "B-9675-2008",
+  "orcidWorks": 49,
+  "orcidEmployment": 3,
+  "orcidEducation": 1,
+  "scholarKeywords": [
+    "Bioinformatics",
+    "Oncology",
+    "Immunology",
+    "Computational Biology"
+  ],
+  "links": {
+    "github": "https://github.com/luvega",
+    "scholar": "https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN",
+    "researchgate": "https://www.researchgate.net/profile/Xinghua-Sui?ev=hdr_xprf",
+    "orcid": "https://orcid.org/0000-0001-6076-4318"
+  },
+  "scholarHighlights": [
+    {
+      "title": "Direct and indirect effects of climate on richness drive the latitudinal diversity gradient in forest trees",
+      "citations": 161
+    },
+    {
+      "title": "Arbuscular mycorrhizal trees influence the latitudinal beta-diversity gradient of tree communities in forests worldwide",
+      "citations": 99
+    }
+  ],
+  "updatedAt": "2026-04-05"
+}
