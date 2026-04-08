@@ -157,12 +157,12 @@ function renderHome() {
     {
       time: "2026",
       text:
-        "在 Cell Reports Medicine 与 Acta Pharmaceutica Sinica B 发表多肽免疫治疗新进展，推进双特异策略与免疫排斥逆转方向。"
+        "双特异策略（Cell Reports Medicine）与逆转免疫排斥的多肽药物（Acta Pharmaceutica Sinica B ）"
     },
     {
       time: "2025",
       text:
-        "围绕口服疫苗、蛋白降解平台与免疫协同治疗形成连续产出，覆盖 Nano Letters、Nature Communications 等期刊。"
+        "口服疫苗、蛋白降解平台与免疫协同治疗（Nano Letters及Nature Communications）"
     },
     {
       time: "2024-2028（在研）",
