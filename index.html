@@ -1,117 +1,380 @@
 <!doctype html>
-<html lang="zh-CN">
+<html class="no-js" lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="隋兴华个人学术主页：近期科研进展、研究方向与代表成果。" />
+    <meta
+      id="meta-description"
+      name="description"
+      content="隋兴华个人学术主页：肿瘤免疫治疗、多肽药物、肿瘤微环境、单细胞与多组学分析及 AI 辅助药物发现。"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://luvega.github.io/" />
+    <meta property="og:title" content="隋兴华 | 学术主页" />
+    <meta property="og:description" content="肿瘤免疫治疗、多肽药物与计算生物学研究。" />
+    <meta property="og:image" content="https://luvega.github.io/assets/xinghua-sui.webp" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="隋兴华肖像" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://luvega.github.io/" />
+    <link rel="icon" href="assets/xinghua-sui.webp" type="image/webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/xinghua-sui.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
     <title>隋兴华 | 学术主页</title>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Xinghua Sui",
+        "alternateName": "隋兴华",
+        "url": "https://luvega.github.io/",
+        "image": "https://luvega.github.io/assets/xinghua-sui.webp",
+        "jobTitle": "Associate Professor",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Sun Yat-sen University",
+          "department": "School of Pharmaceutical Sciences (Shenzhen)",
+          "url": "https://www.sysu.edu.cn/"
+        },
+        "sameAs": [
+          "https://github.com/luvega",
+          "https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN",
+          "https://www.researchgate.net/profile/Xinghua-Sui",
+          "https://orcid.org/0000-0001-6076-4318"
+        ],
+        "knowsAbout": [
+          "Cancer immunotherapy",
+          "Peptide therapeutics",
+          "Tumor microenvironment",
+          "Single-cell analysis",
+          "Multi-omics",
+          "Computational biology"
+        ]
+      }
+    </script>
   </head>
-  <body data-page="home">
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html">隋兴华 | Xinghua Sui</a>
-        <nav class="site-nav">
-          <a href="index.html">主页</a>
-          <a href="about.html">介绍页</a>
-          <a href="works.html">工作成果页</a>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">跳到主要内容</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container nav-shell">
+        <a
+          class="brand"
+          href="#top"
+          aria-label="返回首页"
+          data-i18n-aria-label="accessibility.home"
+        >
+          <span>隋兴华</span>
+          <span class="brand-english">/ Xinghua Sui</span>
+        </a>
+
+        <nav
+          class="site-nav"
+          id="primary-nav"
+          aria-label="主要导航"
+          data-i18n-aria-label="accessibility.navigation"
+        >
+          <a href="#research" data-i18n="nav.research">研究方向</a>
+          <a href="#publications" data-i18n="nav.publications">近期成果</a>
+          <a href="#projects" data-i18n="nav.projects">科研项目</a>
+          <a href="#experience" data-i18n="nav.experience">学术经历</a>
+          <a href="#profiles" data-i18n="nav.profiles">学术平台</a>
         </nav>
+
+        <div class="header-actions">
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-i18n="controls.menu"
+            data-i18n-aria-label="accessibility.menu"
+          >
+            导航
+          </button>
+          <div
+            class="language-switch"
+            role="group"
+            aria-label="语言选择"
+            data-i18n-aria-label="accessibility.language"
+          >
+            <button type="button" data-language="zh" aria-pressed="true">中</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main class="container page">
-      <section class="profile-block">
-        <div class="profile-photo">
-          <img src="avatar.jpg" alt="隋兴华证件照" />
-        </div>
-        <div class="profile-text">
-          <p class="muted">中山大学药学院（深圳） | 副教授</p>
-          <h1>隋兴华</h1>
-          <p>
-            长期从事肿瘤免疫治疗相关研究，聚焦多肽药物设计、肿瘤微环境靶点挖掘、
-            单细胞与多组学分析，以及 AI 驱动药物筛选。
-          </p>
-          <div class="link-row">
-            <a href="https://github.com/luvega" target="_blank" rel="noopener">GitHub</a>
+    <main id="main-content">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-kicker" data-i18n="hero.kicker">中山大学药学院（深圳） / 副教授</p>
+          <h1 id="hero-title">
+            <span data-i18n="hero.namePrimary">隋兴华</span>
+            <small data-i18n="hero.nameSecondary">Xinghua Sui</small>
+          </h1>
+          <p class="hero-summary" data-i18n="hero.summary">以多肽与计算方法探索肿瘤免疫治疗。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#publications" data-i18n="hero.primaryCta">查看成果</a>
             <a
+              class="button button-secondary"
               href="https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               >Google Scholar</a
             >
-            <a
-              href="https://www.researchgate.net/profile/Xinghua-Sui?ev=hdr_xprf"
-              target="_blank"
-              rel="noopener"
-              >ResearchGate</a
-            >
-            <a href="https://orcid.org/0000-0001-6076-4318" target="_blank" rel="noopener">ORCID</a>
+          </div>
+        </div>
+
+        <figure class="hero-portrait">
+          <img
+            src="assets/xinghua-sui.webp"
+            width="720"
+            height="900"
+            fetchpriority="high"
+            decoding="async"
+            alt="隋兴华肖像"
+            data-i18n-alt="accessibility.portraitAlt"
+          />
+        </figure>
+      </section>
+
+      <section class="section section-surface" id="research" aria-labelledby="research-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="research-title" data-i18n="research.title">研究方向</h2>
+            <p data-i18n="research.intro">四条相互关联的研究路径，从机制发现延伸到候选治疗策略。</p>
+          </div>
+
+          <div class="research-layout">
+            <figure class="research-visual" aria-hidden="true">
+              <img
+                src="assets/research-visual.webp"
+                width="1600"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+                alt=""
+              />
+            </figure>
+
+            <div class="research-list">
+              <article>
+                <h3 data-i18n="research.peptideTitle">肿瘤免疫治疗与多肽药物</h3>
+                <p data-i18n="research.peptideText">围绕免疫检查点阻断、多靶点协同与新型多肽治疗策略开展研究。</p>
+              </article>
+              <article>
+                <h3 data-i18n="research.microenvironmentTitle">肿瘤微环境与细胞通讯</h3>
+                <p data-i18n="research.microenvironmentText">识别免疫微环境中的细胞互作网络、关键靶点与治疗线索。</p>
+              </article>
+              <article>
+                <h3 data-i18n="research.omicsTitle">单细胞与多组学分析</h3>
+                <p data-i18n="research.omicsText">整合单细胞、转录组与临床信息，解析疾病异质性与治疗响应。</p>
+              </article>
+              <article>
+                <h3 data-i18n="research.aiTitle">AI 辅助药物发现</h3>
+                <p data-i18n="research.aiText">结合生成式模型、结构预测与计算筛选，优先排序可验证的候选分子。</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <h2>🔬 近期科研进展</h2>
-        <div id="progress-timeline" class="timeline"></div>
-      </section>
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="publications-title" data-i18n="publications.title">近期成果</h2>
+            <p data-i18n="publications.intro">聚焦近期与当前研究方向直接相关的代表成果。</p>
+          </div>
 
-      <section class="section">
-        <h2>📌 研究概览</h2>
-        <div class="stats-grid">
-          <article>
-            <strong id="paper-count">-</strong>
-            <span>论文总数（基于 ENW）</span>
-          </article>
-          <article>
-            <strong id="year-span">-</strong>
-            <span>成果年份区间</span>
-          </article>
-          <article>
-            <strong id="recent-count">-</strong>
-            <span>2024-2026 年论文数</span>
-          </article>
-          <article>
-            <strong>AI + 生物医药</strong>
-            <span>多肽免疫治疗与计算分析协同</span>
-          </article>
+          <div class="publication-list">
+            <article class="publication-item">
+              <p class="publication-meta">Science Advances / 2026</p>
+              <h3>T cell-nanodrug conjugates synchronize vascular normalization and immune activation for solid tumor therapy</h3>
+              <a class="doi-link" href="https://doi.org/10.1126/sciadv.adp2955" target="_blank" rel="noopener noreferrer">DOI 10.1126/sciadv.adp2955</a>
+            </article>
+            <article class="publication-item">
+              <p class="publication-meta">Acta Pharmaceutica Sinica B / 2026</p>
+              <h3>Degradation of membrane and extracellular DDR1 by a peptide-based LYTAC to overcome immune exclusion for cancer immunotherapy</h3>
+              <a class="doi-link" href="https://doi.org/10.1016/j.apsb.2026.03.041" target="_blank" rel="noopener noreferrer">DOI 10.1016/j.apsb.2026.03.041</a>
+            </article>
+            <article class="publication-item">
+              <p class="publication-meta">Cell Reports Medicine / 2026</p>
+              <h3>Design of a bispecific peptide-nanozyme conjugate for cancer immunotherapy</h3>
+              <a class="doi-link" href="https://doi.org/10.1016/j.xcrm.2025.102568" target="_blank" rel="noopener noreferrer">DOI 10.1016/j.xcrm.2025.102568</a>
+            </article>
+            <article class="publication-item">
+              <p class="publication-meta">Nature Communications / 2025</p>
+              <h3>A covalent peptide-based lysosome-targeting protein degradation platform for cancer immunotherapy</h3>
+              <a class="doi-link" href="https://doi.org/10.1038/s41467-025-56648-6" target="_blank" rel="noopener noreferrer">DOI 10.1038/s41467-025-56648-6</a>
+            </article>
+            <article class="publication-item">
+              <p class="publication-meta">Nature Methods / 2025</p>
+              <h3>CELLECT: contrastive embedding learning for large-scale efficient cell tracking</h3>
+              <a class="doi-link" href="https://doi.org/10.1038/s41592-025-02886-x" target="_blank" rel="noopener noreferrer">DOI 10.1038/s41592-025-02886-x</a>
+            </article>
+            <article class="publication-item">
+              <p class="publication-meta">Nano Letters / 2025</p>
+              <h3>Development of a Cascade-Targeting Oral Vaccine via Glycoprotein 2 on Intestinal Microfold Cells for Cancer Immunotherapy</h3>
+              <a class="doi-link" href="https://doi.org/10.1021/acs.nanolett.4c06123" target="_blank" rel="noopener noreferrer">DOI 10.1021/acs.nanolett.4c06123</a>
+            </article>
+          </div>
+
+          <a
+            class="text-link"
+            href="https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="publications.all"
+            >在 Google Scholar 查看全部成果</a
+          >
         </div>
       </section>
 
-      <section class="section">
-        <h2>🧭 快速导航</h2>
-        <ul class="plain-list">
-          <li><a href="about.html">查看教育经历、工作经历与研究方向</a></li>
-          <li><a href="works.html">查看代表论文、项目与代码成果</a></li>
-        </ul>
+      <section class="section section-surface" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="projects-title" data-i18n="projects.title">科研项目</h2>
+            <p data-i18n="projects.intro">围绕计算驱动的靶点发现、多肽设计与肿瘤免疫治疗开展协同研究。</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-item">
+              <p data-i18n="projects.shenzhenFund">深圳市自然科学基金（面上项目）</p>
+              <h3 data-i18n="projects.shenzhenTitle">生成式 AI 与结构预测融合驱动的免疫检查点超高亲和力多肽筛选平台构建及验证研究</h3>
+              <strong data-i18n="projects.principal">主持</strong>
+            </article>
+            <article class="project-item">
+              <p data-i18n="projects.guangdongGeneral">广东省基础与应用基础研究基金（面上项目，2024-2026）</p>
+              <h3 data-i18n="projects.crcTitle">基于人工智能的结直肠癌肿瘤微环境细胞间通讯靶点及药物筛选研究</h3>
+              <strong data-i18n="projects.principal">主持</strong>
+            </article>
+            <article class="project-item">
+              <p data-i18n="projects.guangdongJoint">广东省基础与应用基础研究基金（区域联合基金重点，2022-2025）</p>
+              <h3 data-i18n="projects.tnbcTitle">三阴性乳腺癌免疫微环境细胞通讯网络关键靶点发现与新型多肽药物筛选</h3>
+              <strong data-i18n="projects.participant">参与</strong>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>🪪 学术档案标识</h2>
-        <div class="stats-grid">
-          <article>
-            <strong id="orcid-id">0000-0001-6076-4318</strong>
-            <span>ORCID iD</span>
-          </article>
-          <article>
-            <strong id="scopus-id">36164687900</strong>
-            <span>Scopus Author ID</span>
-          </article>
-          <article>
-            <strong id="researcher-id">B-9675-2008</strong>
-            <span>ResearcherID</span>
-          </article>
-          <article>
-            <strong id="orcid-works">49</strong>
-            <span>ORCID 公开 Works 数</span>
-          </article>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="experience-title" data-i18n="experience.title">学术经历</h2>
+            <p data-i18n="experience.intro">从生态学与应用数学出发，逐步拓展至肿瘤免疫与计算药物发现。</p>
+          </div>
+
+          <div class="career-grid">
+            <section aria-labelledby="employment-title">
+              <h3 id="employment-title" data-i18n="experience.employment">工作经历</h3>
+              <ol class="career-list">
+                <li>
+                  <time datetime="2024-07" data-i18n="experience.presentDate">2024.07 - 至今</time>
+                  <div>
+                    <h4 data-i18n="experience.associateProfessor">副教授</h4>
+                    <p data-i18n="experience.sysuPharmacy">中山大学药学院（深圳）</p>
+                  </div>
+                </li>
+                <li>
+                  <time>2019.02 - 2024.06</time>
+                  <div>
+                    <h4 data-i18n="experience.associateResearcher">副研究员</h4>
+                    <p data-i18n="experience.sysuPharmacy">中山大学药学院（深圳）</p>
+                  </div>
+                </li>
+                <li>
+                  <time>2018.11 - 2019.02</time>
+                  <div>
+                    <h4 data-i18n="experience.assistantResearcher">助理研究员</h4>
+                    <p data-i18n="experience.forestryInstitute">中国林业科学研究院热带林业研究所</p>
+                  </div>
+                </li>
+                <li>
+                  <time>2012.11 - 2018.11</time>
+                  <div>
+                    <h4 data-i18n="experience.postdoc">博士后</h4>
+                    <p data-i18n="experience.sysuLife">中山大学生命科学学院</p>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <section aria-labelledby="education-title">
+              <h3 id="education-title" data-i18n="experience.education">教育经历</h3>
+              <ol class="career-list">
+                <li>
+                  <time>2008.09 - 2012.07</time>
+                  <div>
+                    <h4 data-i18n="experience.phd">生态学博士</h4>
+                    <p data-i18n="experience.botanyInstitute">中国科学院植物研究所</p>
+                  </div>
+                </li>
+                <li>
+                  <time>2006.09 - 2008.06</time>
+                  <div>
+                    <h4 data-i18n="experience.graduateEcology">生态学研究生阶段</h4>
+                    <p data-i18n="experience.botanyInstitute">中国科学院植物研究所</p>
+                  </div>
+                </li>
+                <li>
+                  <time>2002.09 - 2006.07</time>
+                  <div>
+                    <h4 data-i18n="experience.bachelor">应用数学学士</h4>
+                    <p data-i18n="experience.shandong">山东大学</p>
+                  </div>
+                </li>
+              </ol>
+            </section>
+          </div>
         </div>
-        <p class="muted" id="profile-updated-at">学术档案更新时间：-</p>
+      </section>
+
+      <section class="section section-surface" id="profiles" aria-labelledby="profiles-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="profiles-title" data-i18n="profiles.title">学术平台</h2>
+            <p data-i18n="profiles.intro">通过公开学术档案查看完整成果与持续更新的信息。</p>
+          </div>
+
+          <div class="profile-links">
+            <a href="https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">
+              <span>Google Scholar</span>
+              <strong>Xinghua Sui</strong>
+            </a>
+            <a href="https://www.researchgate.net/profile/Xinghua-Sui" target="_blank" rel="noopener noreferrer">
+              <span>ResearchGate</span>
+              <strong>Xinghua Sui</strong>
+            </a>
+            <a href="https://orcid.org/0000-0001-6076-4318" target="_blank" rel="noopener noreferrer">
+              <span>ORCID</span>
+              <strong>0000-0001-6076-4318</strong>
+            </a>
+            <a href="https://github.com/luvega" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <strong>@luvega</strong>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Xinghua Sui | Powered by GitHub Pages</p>
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Xinghua Sui</p>
+        <p data-i18n="footer.source">公开学术档案核对日期：2026-09-03。网站托管于 GitHub Pages。</p>
       </div>
     </footer>
 

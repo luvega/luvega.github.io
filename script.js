@@ -1,313 +1,261 @@
-const publications = [
-  {
-    year: 2026,
-    title:
-      "Design of a bispecific peptide-nanozyme conjugate for cancer immunotherapy",
-    journal: "Cell Reports Medicine"
+const translations = {
+  zh: {
+    "meta.title": "隋兴华 | 学术主页",
+    "meta.description":
+      "隋兴华个人学术主页：肿瘤免疫治疗、多肽药物、肿瘤微环境、单细胞与多组学分析及 AI 辅助药物发现。",
+    "meta.ogDescription": "肿瘤免疫治疗、多肽药物与计算生物学研究。",
+    "accessibility.skip": "跳到主要内容",
+    "accessibility.home": "返回首页",
+    "accessibility.navigation": "主要导航",
+    "accessibility.language": "语言选择",
+    "accessibility.menu": "打开或关闭导航",
+    "accessibility.portraitAlt": "隋兴华肖像",
+    "controls.menu": "导航",
+    "nav.research": "研究方向",
+    "nav.publications": "近期成果",
+    "nav.projects": "科研项目",
+    "nav.experience": "学术经历",
+    "nav.profiles": "学术平台",
+    "hero.kicker": "中山大学药学院（深圳） / 副教授",
+    "hero.namePrimary": "隋兴华",
+    "hero.nameSecondary": "Xinghua Sui",
+    "hero.summary": "以多肽与计算方法探索肿瘤免疫治疗。",
+    "hero.primaryCta": "查看成果",
+    "research.title": "研究方向",
+    "research.intro": "四条相互关联的研究路径，从机制发现延伸到候选治疗策略。",
+    "research.peptideTitle": "肿瘤免疫治疗与多肽药物",
+    "research.peptideText": "围绕免疫检查点阻断、多靶点协同与新型多肽治疗策略开展研究。",
+    "research.microenvironmentTitle": "肿瘤微环境与细胞通讯",
+    "research.microenvironmentText": "识别免疫微环境中的细胞互作网络、关键靶点与治疗线索。",
+    "research.omicsTitle": "单细胞与多组学分析",
+    "research.omicsText": "整合单细胞、转录组与临床信息，解析疾病异质性与治疗响应。",
+    "research.aiTitle": "AI 辅助药物发现",
+    "research.aiText": "结合生成式模型、结构预测与计算筛选，优先排序可验证的候选分子。",
+    "publications.title": "近期成果",
+    "publications.intro": "聚焦近期与当前研究方向直接相关的代表成果。",
+    "publications.all": "在 Google Scholar 查看全部成果",
+    "projects.title": "科研项目",
+    "projects.intro": "围绕计算驱动的靶点发现、多肽设计与肿瘤免疫治疗开展协同研究。",
+    "projects.shenzhenFund": "深圳市自然科学基金（面上项目）",
+    "projects.shenzhenTitle":
+      "生成式 AI 与结构预测融合驱动的免疫检查点超高亲和力多肽筛选平台构建及验证研究",
+    "projects.guangdongGeneral": "广东省基础与应用基础研究基金（面上项目，2024-2026）",
+    "projects.crcTitle": "基于人工智能的结直肠癌肿瘤微环境细胞间通讯靶点及药物筛选研究",
+    "projects.guangdongJoint":
+      "广东省基础与应用基础研究基金（区域联合基金重点，2022-2025）",
+    "projects.tnbcTitle":
+      "三阴性乳腺癌免疫微环境细胞通讯网络关键靶点发现与新型多肽药物筛选",
+    "projects.principal": "主持",
+    "projects.participant": "参与",
+    "experience.title": "学术经历",
+    "experience.intro": "从生态学与应用数学出发，逐步拓展至肿瘤免疫与计算药物发现。",
+    "experience.employment": "工作经历",
+    "experience.education": "教育经历",
+    "experience.presentDate": "2024.07 - 至今",
+    "experience.associateProfessor": "副教授",
+    "experience.associateResearcher": "副研究员",
+    "experience.assistantResearcher": "助理研究员",
+    "experience.postdoc": "博士后",
+    "experience.sysuPharmacy": "中山大学药学院（深圳）",
+    "experience.forestryInstitute": "中国林业科学研究院热带林业研究所",
+    "experience.sysuLife": "中山大学生命科学学院",
+    "experience.phd": "生态学博士",
+    "experience.graduateEcology": "生态学研究生阶段",
+    "experience.bachelor": "应用数学学士",
+    "experience.botanyInstitute": "中国科学院植物研究所",
+    "experience.shandong": "山东大学",
+    "profiles.title": "学术平台",
+    "profiles.intro": "通过公开学术档案查看完整成果与持续更新的信息。",
+    "footer.source": "公开学术档案核对日期：2026-09-03。网站托管于 GitHub Pages。"
   },
-  {
-    year: 2026,
-    title:
-      "Degradation of membrane and extracellular DDR1 by a peptide-based LYTAC to overcome immune exclusion for cancer immunotherapy",
-    journal: "Acta Pharmaceutica Sinica B"
-  },
-  {
-    year: 2025,
-    title:
-      "A covalent peptide-based lysosome-targeting protein degradation platform for cancer immunotherapy",
-    journal: "Nature Communications"
-  },
-  {
-    year: 2025,
-    title: "Chidamide functions as a VISTA/PSGL-1 blocker for cancer immunotherapy",
-    journal: "Cancer Immunology, Immunotherapy"
-  },
-  {
-    year: 2025,
-    title:
-      "Development of a Cascade-Targeting Oral Vaccine via Glycoprotein 2 on Intestinal Microfold Cells for Cancer Immunotherapy",
-    journal: "Nano Letters"
-  },
-  {
-    year: 2025,
-    title: "DON-Loaded Nanodrug-T Cell Conjugates With PD-L1 Blockade for Solid Tumor Therapy",
-    journal: "Advanced Science"
-  },
-  {
-    year: 2025,
-    title: "CELLECT: contrastive embedding learning for large-scale efficient cell tracking",
-    journal: "Nature Methods"
-  },
-  {
-    year: 2025,
-    title: "An oral vaccine based on stable peptide-chitosan conjugate targeting DEC-205 for cancer immunotherapy",
-    journal: "Journal of Controlled Release"
-  },
-  {
-    year: 2024,
-    title:
-      "Fish oil-based microemulsion can efficiently deliver oral peptide blocking PD-1/PD-L1 and simultaneously induce ferroptosis for cancer immunotherapy",
-    journal: "Journal of Controlled Release"
-  },
-  {
-    year: 2024,
-    title:
-      "An integrated framework for prognosis prediction and drug response modeling in colorectal liver metastasis drug discovery",
-    journal: "Journal of Translational Medicine"
-  },
-  {
-    year: 2023,
-    title:
-      "Integrative analysis of bulk and single-cell gene expression profiles to identify tumor-associated macrophage-derived CCL18 as a therapeutic target of esophageal squamous cell carcinoma",
-    journal: "Journal of Experimental & Clinical Cancer Research"
-  },
-  {
-    year: 2023,
-    title:
-      "Design of a novel chimeric peptide via dual blockade of CD47/SIRPa and PD-1/PD-L1 for cancer immunotherapy",
-    journal: "Science China Life Sciences"
+  en: {
+    "meta.title": "Xinghua Sui | Academic Profile",
+    "meta.description":
+      "Academic profile of Xinghua Sui: cancer immunotherapy, peptide therapeutics, tumor microenvironment, single-cell and multi-omics analysis, and AI-assisted drug discovery.",
+    "meta.ogDescription":
+      "Research in cancer immunotherapy, peptide therapeutics and computational biology.",
+    "accessibility.skip": "Skip to main content",
+    "accessibility.home": "Back to home",
+    "accessibility.navigation": "Primary navigation",
+    "accessibility.language": "Language selection",
+    "accessibility.menu": "Open or close navigation",
+    "accessibility.portraitAlt": "Portrait of Xinghua Sui",
+    "controls.menu": "Menu",
+    "nav.research": "Research",
+    "nav.publications": "Publications",
+    "nav.projects": "Projects",
+    "nav.experience": "Experience",
+    "nav.profiles": "Profiles",
+    "hero.kicker": "Associate Professor / Sun Yat-sen University, Shenzhen",
+    "hero.namePrimary": "Xinghua Sui",
+    "hero.nameSecondary": "隋兴华",
+    "hero.summary":
+      "Exploring cancer immunotherapy through peptide therapeutics and computational biology.",
+    "hero.primaryCta": "View publications",
+    "research.title": "Research",
+    "research.intro":
+      "Four connected research paths extend from mechanism discovery to candidate therapeutic strategies.",
+    "research.peptideTitle": "Cancer immunotherapy and peptide therapeutics",
+    "research.peptideText":
+      "Developing peptide strategies for immune-checkpoint blockade, multi-target synergy and therapeutic intervention.",
+    "research.microenvironmentTitle": "Tumor microenvironment and cell communication",
+    "research.microenvironmentText":
+      "Identifying cellular interaction networks, key targets and therapeutic leads in the immune microenvironment.",
+    "research.omicsTitle": "Single-cell and multi-omics analysis",
+    "research.omicsText":
+      "Integrating single-cell, transcriptomic and clinical data to study disease heterogeneity and treatment response.",
+    "research.aiTitle": "AI-assisted drug discovery",
+    "research.aiText":
+      "Combining generative models, structure prediction and computational screening to prioritize testable candidates.",
+    "publications.title": "Recent publications",
+    "publications.intro":
+      "Selected recent work directly connected with the current research program.",
+    "publications.all": "View all publications on Google Scholar",
+    "projects.title": "Research projects",
+    "projects.intro":
+      "Collaborative research spanning computational target discovery, peptide design and cancer immunotherapy.",
+    "projects.shenzhenFund": "Shenzhen Natural Science Foundation, General Program",
+    "projects.shenzhenTitle":
+      "Development and validation of an immune-checkpoint, ultra-high-affinity peptide screening platform integrating generative AI and structure prediction",
+    "projects.guangdongGeneral":
+      "Guangdong Basic and Applied Basic Research Foundation, General Program, 2024-2026",
+    "projects.crcTitle":
+      "AI-based discovery of intercellular communication targets and drug candidates in the colorectal cancer tumor microenvironment",
+    "projects.guangdongJoint":
+      "Guangdong Basic and Applied Basic Research Foundation, Regional Joint Fund Key Program, 2022-2025",
+    "projects.tnbcTitle":
+      "Discovery of key cell-communication targets in the immune microenvironment of triple-negative breast cancer and screening of novel peptide therapeutics",
+    "projects.principal": "Principal investigator",
+    "projects.participant": "Participant",
+    "experience.title": "Academic experience",
+    "experience.intro":
+      "A foundation in ecology and applied mathematics that expanded into tumor immunology and computational drug discovery.",
+    "experience.employment": "Appointments",
+    "experience.education": "Education",
+    "experience.presentDate": "2024.07 - Present",
+    "experience.associateProfessor": "Associate Professor",
+    "experience.associateResearcher": "Associate Research Fellow",
+    "experience.assistantResearcher": "Assistant Research Fellow",
+    "experience.postdoc": "Postdoctoral Fellow",
+    "experience.sysuPharmacy":
+      "School of Pharmaceutical Sciences (Shenzhen), Sun Yat-sen University",
+    "experience.forestryInstitute":
+      "Research Institute of Tropical Forestry, Chinese Academy of Forestry",
+    "experience.sysuLife": "School of Life Sciences, Sun Yat-sen University",
+    "experience.phd": "Ph.D. in Ecology",
+    "experience.graduateEcology": "Graduate study in Ecology",
+    "experience.bachelor": "B.S. in Applied Mathematics",
+    "experience.botanyInstitute": "Institute of Botany, Chinese Academy of Sciences",
+    "experience.shandong": "Shandong University",
+    "profiles.title": "Academic profiles",
+    "profiles.intro":
+      "Explore complete publication records and continuously updated information on public academic platforms.",
+    "footer.source":
+      "Public academic records reviewed on 2026-09-03. Hosted on GitHub Pages."
   }
-];
-
-const yearlyCounts = {
-  2012: 1,
-  2018: 2,
-  2019: 4,
-  2020: 5,
-  2021: 7,
-  2022: 3,
-  2023: 5,
-  2024: 2,
-  2025: 7,
-  2026: 2
 };
 
-const repos = [
-  {
-    name: "HyperSCA",
-    url: "https://github.com/luvega/HyperSCA",
-    desc: "Source code for HyperSCA framework",
-    lang: "Python",
-    updated: "2026-03-03"
-  },
-  {
-    name: "iodraw-files",
-    url: "https://github.com/luvega/iodraw-files",
-    desc: "流程图、思维导图、在线图表等文件模板",
-    lang: "Template",
-    updated: "2025-03-11"
-  },
-  {
-    name: "itmtogpx",
-    url: "https://github.com/luvega/itmtogpx",
-    desc: "Automatically exported from code.google.com/p/itmtogpx",
-    lang: "C#",
-    updated: "2016-02-27"
-  }
-];
+const storageKey = "site-language";
+const header = document.getElementById("site-header");
+const menuToggle = document.getElementById("menu-toggle");
+const primaryNav = document.getElementById("primary-nav");
+const metaDescription = document.getElementById("meta-description");
+const openGraphTitle = document.querySelector('meta[property="og:title"]');
+const openGraphDescription = document.querySelector('meta[property="og:description"]');
+const openGraphImageAlt = document.querySelector('meta[property="og:image:alt"]');
 
-const totalPapersFromEnw = 38;
-const defaultAcademicProfile = {
-  orcid: "0000-0001-6076-4318",
-  scopusAuthorId: "36164687900",
-  researcherId: "B-9675-2008",
-  orcidWorks: 49,
-  orcidEmployment: 3,
-  orcidEducation: 1,
-  scholarKeywords: ["Bioinformatics", "Oncology", "Immunology", "Computational Biology"],
-  links: {
-    github: "https://github.com/luvega",
-    scholar: "https://scholar.google.com/citations?user=IkVBcz4AAAAJ&hl=zh-CN",
-    researchgate: "https://www.researchgate.net/profile/Xinghua-Sui?ev=hdr_xprf",
-    orcid: "https://orcid.org/0000-0001-6076-4318"
-  },
-  scholarHighlights: [
-    {
-      title:
-        "Direct and indirect effects of climate on richness drive the latitudinal diversity gradient in forest trees",
-      citations: 161
-    },
-    {
-      title:
-        "Arbuscular mycorrhizal trees influence the latitudinal beta-diversity gradient of tree communities in forests worldwide",
-      citations: 99
-    }
-  ],
-  updatedAt: "-"
-};
-
-function setYear() {
-  const yearNode = document.getElementById("year");
-  if (yearNode) yearNode.textContent = new Date().getFullYear();
-}
-
-function renderHome() {
-  const paperCount = document.getElementById("paper-count");
-  const yearSpan = document.getElementById("year-span");
-  const recentCount = document.getElementById("recent-count");
-  const timeline = document.getElementById("progress-timeline");
-  if (!timeline || !paperCount || !yearSpan || !recentCount) return;
-
-  paperCount.textContent = `${totalPapersFromEnw}+`;
-  yearSpan.textContent = "2012-2026";
-  const lastThreeYears = publications.filter((p) => p.year >= 2024).length;
-  recentCount.textContent = String(lastThreeYears);
-
-  const progress = [
-    {
-      time: "2026",
-      text:
-        "在 Cell Reports Medicine 与 Acta Pharmaceutica Sinica B 发表多肽免疫治疗新进展，推进双特异策略与免疫排斥逆转方向。"
-    },
-    {
-      time: "2025",
-      text:
-        "围绕口服疫苗、蛋白降解平台与免疫协同治疗形成连续产出，覆盖 Nano Letters、Nature Communications 等期刊。"
-    },
-    {
-      time: "2024-2028（在研）",
-      text:
-        "主持深圳市自然科学基金项目，构建生成式 AI 与结构预测融合的高亲和力多肽筛选平台。"
-    },
-    {
-      time: "2024-2026（在研）",
-      text:
-        "主持广东省基金项目，聚焦结直肠癌微环境细胞通讯靶点与药物筛选研究。"
-    },
-    {
-      time: "2023",
-      text:
-        "完成食管鳞癌肿瘤相关巨噬细胞 CCL18 靶向研究，强化单细胞与 bulk 数据融合分析路径。"
-    }
-  ];
-
-  timeline.innerHTML = progress
-    .map(
-      (item) => `
-      <article class="timeline-item">
-        <div class="meta">${item.time}</div>
-        <div>${item.text}</div>
-      </article>
-    `
-    )
-    .join("");
-}
-
-function renderWorks() {
-  const featured = document.getElementById("featured-papers");
-  const bars = document.getElementById("yearly-bars");
-  const repoList = document.getElementById("repo-list");
-  if (!featured || !bars || !repoList) return;
-
-  featured.innerHTML = publications
-    .slice(0, 8)
-    .map(
-      (p) => `
-      <article class="paper-item">
-        <div class="year">${p.year} | ${p.journal}</div>
-        <div>${p.title}</div>
-      </article>
-    `
-    )
-    .join("");
-
-  const max = Math.max(...Object.values(yearlyCounts));
-  bars.innerHTML = Object.entries(yearlyCounts)
-    .sort(([a], [b]) => Number(b) - Number(a))
-    .map(
-      ([year, count]) => `
-      <div class="bar-row">
-        <strong>${year}</strong>
-        <div class="bar"><span style="width:${Math.round((count / max) * 100)}%"></span></div>
-        <span>${count} 篇</span>
-      </div>
-    `
-    )
-    .join("");
-
-  repoList.innerHTML = repos
-    .map(
-      (repo) => `
-      <article class="repo-item">
-        <h3><a href="${repo.url}" target="_blank" rel="noopener">${repo.name}</a></h3>
-        <div>${repo.desc}</div>
-        <div class="meta">${repo.lang} | 最近更新：${repo.updated}</div>
-      </article>
-    `
-    )
-    .join("");
-}
-
-function renderAcademicProfile(profile) {
-  const orcidNode = document.getElementById("orcid-id");
-  const scopusNode = document.getElementById("scopus-id");
-  const researcherNode = document.getElementById("researcher-id");
-  const worksNode = document.getElementById("orcid-works");
-  const updatedNode = document.getElementById("profile-updated-at");
-
-  if (orcidNode) orcidNode.textContent = profile.orcid;
-  if (scopusNode) scopusNode.textContent = profile.scopusAuthorId;
-  if (researcherNode) researcherNode.textContent = profile.researcherId;
-  if (worksNode) worksNode.textContent = String(profile.orcidWorks);
-  if (updatedNode) updatedNode.textContent = `学术档案更新时间：${profile.updatedAt}`;
-
-  const profileLinks = document.getElementById("profile-links");
-  if (profileLinks) {
-    profileLinks.innerHTML = `
-      <li>Google Scholar：<a href="${profile.links.scholar}" target="_blank" rel="noopener">Xinghua Sui</a></li>
-      <li>ResearchGate：<a href="${profile.links.researchgate}" target="_blank" rel="noopener">Xinghua Sui</a></li>
-      <li>GitHub：<a href="${profile.links.github}" target="_blank" rel="noopener">luvega</a></li>
-      <li>ORCID：<a href="${profile.links.orcid}" target="_blank" rel="noopener">${profile.orcid}</a></li>
-      <li>Scopus Author ID：${profile.scopusAuthorId}</li>
-      <li>ResearcherID：${profile.researcherId}</li>
-    `;
-  }
-
-  const summaryList = document.getElementById("academic-summary-list");
-  if (summaryList) {
-    summaryList.innerHTML = `
-      <li>Google Scholar 页面显示机构为 ${profile.affiliation}，且为 mail.sysu.edu.cn 邮箱验证。</li>
-      <li>Scholar 研究关键词：${profile.scholarKeywords.join("、")}。</li>
-      <li>ORCID 公开记录：Employment ${profile.orcidEmployment} 条、Education ${profile.orcidEducation} 条、Works ${profile.orcidWorks} 条。</li>
-    `;
-  }
-
-  const worksProfileLinks = document.getElementById("works-profile-links");
-  if (worksProfileLinks) {
-    worksProfileLinks.innerHTML = `
-      <li>Google Scholar：<a href="${profile.links.scholar}" target="_blank" rel="noopener">Xinghua Sui</a></li>
-      <li>ResearchGate：<a href="${profile.links.researchgate}" target="_blank" rel="noopener">Xinghua Sui</a></li>
-      <li>ORCID：<a href="${profile.links.orcid}" target="_blank" rel="noopener">${profile.orcid}</a></li>
-      <li>本站数据来源：Publications.enw、GitHub 公开仓库信息；ResearchGate/Scholar/ORCID 作为外部学术档案入口。</li>
-    `;
-  }
-
-  const publicMetrics = document.getElementById("public-academic-metrics");
-  if (publicMetrics) {
-    const highlights = profile.scholarHighlights
-      .map((item) => `${item.title}（${item.citations}）`)
-      .join("；");
-    publicMetrics.innerHTML = `
-      <li>ORCID 公开 Works：${profile.orcidWorks}；Employment：${profile.orcidEmployment}；Education：${profile.orcidEducation}。</li>
-      <li>ORCID Other IDs：Scopus Author ID ${profile.scopusAuthorId}，ResearcherID ${profile.researcherId}。</li>
-      <li>Google Scholar 高被引论文示例：${highlights}。</li>
-      <li>注：Scholar 页面可能存在动态加载限制，请以原页面显示为准。</li>
-    `;
-  }
-}
-
-async function initAcademicProfile() {
+function getStoredLanguage() {
   try {
-    const response = await fetch("data/profile.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("profile fetch failed");
-    const profile = await response.json();
-    renderAcademicProfile({ ...defaultAcademicProfile, ...profile });
+    return localStorage.getItem(storageKey) === "en" ? "en" : "zh";
   } catch (_error) {
-    renderAcademicProfile(defaultAcademicProfile);
+    return "zh";
   }
 }
 
-setYear();
-renderHome();
-renderWorks();
-initAcademicProfile();
+function storeLanguage(language) {
+  try {
+    localStorage.setItem(storageKey, language);
+  } catch (_error) {
+    // The language still changes when browser storage is unavailable.
+  }
+}
+
+function updateText(language) {
+  const dictionary = translations[language];
+
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const key = node.dataset.i18n;
+    if (dictionary[key]) node.textContent = dictionary[key];
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const key = node.dataset.i18nAriaLabel;
+    if (dictionary[key]) node.setAttribute("aria-label", dictionary[key]);
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
+    const key = node.dataset.i18nAlt;
+    if (dictionary[key]) node.setAttribute("alt", dictionary[key]);
+  });
+
+  document.title = dictionary["meta.title"];
+  metaDescription?.setAttribute("content", dictionary["meta.description"]);
+  openGraphTitle?.setAttribute("content", dictionary["meta.title"]);
+  openGraphDescription?.setAttribute("content", dictionary["meta.ogDescription"]);
+  openGraphImageAlt?.setAttribute("content", dictionary["accessibility.portraitAlt"]);
+}
+
+function setLanguage(language, persist = true) {
+  const selected = language === "en" ? "en" : "zh";
+  document.documentElement.lang = selected === "en" ? "en" : "zh-CN";
+  document.documentElement.dataset.language = selected;
+  updateText(selected);
+
+  document.querySelectorAll("[data-language]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.language === selected));
+  });
+
+  document.querySelectorAll('a[href*="scholar.google.com/citations"]').forEach((link) => {
+    const url = new URL(link.href);
+    url.searchParams.set("hl", selected === "en" ? "en" : "zh-CN");
+    link.href = url.toString();
+  });
+
+  if (persist) storeLanguage(selected);
+}
+
+function closeMenu(restoreFocus = false) {
+  header?.classList.remove("nav-open");
+  menuToggle?.setAttribute("aria-expanded", "false");
+  if (restoreFocus) menuToggle?.focus();
+}
+
+menuToggle?.addEventListener("click", () => {
+  const isOpen = header?.classList.toggle("nav-open") ?? false;
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+primaryNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => closeMenu());
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && header?.classList.contains("nav-open")) {
+    closeMenu(true);
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (header?.classList.contains("nav-open") && !header.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+document.querySelectorAll("[data-language]").forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
+
+const yearNode = document.getElementById("year");
+if (yearNode) yearNode.textContent = String(new Date().getFullYear());
+
+setLanguage(getStoredLanguage(), false);
